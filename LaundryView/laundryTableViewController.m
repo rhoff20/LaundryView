@@ -30,11 +30,11 @@
 
 - (void)viewDidLoad
 {
-
+    
     [super viewDidLoad];
     
     _machines = [[NSMutableArray alloc] init];
-
+    
     [self loadUserDormSettings];
     
     [self loadMachines:nil];
@@ -45,15 +45,15 @@
 
 - (void) loadUserDormSettings
 {
-
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-
+    
     NSString *documentsDirectory = [paths objectAtIndex:0];
-
+    
     documentsDirectory = [documentsDirectory stringByAppendingPathComponent:@"userDormSettings.txt"];
     
     NSString *filePath = [NSString stringWithFormat:@"%@", documentsDirectory];
-
+    
     NSFileManager *fileManager = [[NSFileManager alloc] init];
     
     if([fileManager fileExistsAtPath:filePath])
@@ -68,7 +68,7 @@
         _dormName = [dormInformation objectAtIndex:1];
         
         self.navigationItem.title = _dormName;
-
+        
     }
     
     [self downloadData];
@@ -87,12 +87,14 @@
     [self.tableView reloadData];
     
     [NSTimer scheduledTimerWithTimeInterval:15.0 target:self selector:@selector(loadMachines:) userInfo:nil repeats:YES];
-
+    
 }
 
 - (void) downloadData
 {
     
+    //no need to manually force room
+    //NSURL * pathToMachinesFile = [NSURL URLWithString:[NSString stringWithFormat: @"http://api.laundryview.com/room/?api_key=8c31a4878805ea4fe690e48fddbfffe1&method=getAppliances&location=336571"]];
     NSURL * pathToMachinesFile = [NSURL URLWithString:[NSString stringWithFormat: @"http://api.laundryview.com/room/?api_key=8c31a4878805ea4fe690e48fddbfffe1&method=getAppliances&location=%@", _dormID]];
     
     NSData *fileData = [NSData dataWithContentsOfURL:pathToMachinesFile];
@@ -113,16 +115,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+    
     return 1;
-
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+    
     return [_machines count];
-
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -139,13 +141,13 @@
         {
             
             cell = [tableView dequeueReusableCellWithIdentifier:@"outOfService"];
-
+            
         }
         
         else {
             
             cell = [tableView dequeueReusableCellWithIdentifier:@"outOfServiceDryer"];
-
+            
         }
         
         cell.machineName.text = [NSString stringWithFormat:@"%@ %@", [[machine.type lowercaseString]capitalizedString], [NSString stringWithFormat:@"%d", [machine.name intValue]]];
@@ -169,7 +171,7 @@
         else {
             
             cell = [tableView dequeueReusableCellWithIdentifier:@"unknownDryer"];
-
+            
         }
         
         cell.machineName.text = [NSString stringWithFormat:@"%@ %@", [[machine.type lowercaseString]capitalizedString], [NSString stringWithFormat:@"%d", [machine.name intValue]]];
@@ -184,14 +186,14 @@
         machineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"machine" forIndexPath:indexPath];
         
         [cell.notificationSwitch setOn:NO animated:NO];
-
+        
         UIApplication *app = [UIApplication sharedApplication];
-
+        
         NSArray *eventArray = [app scheduledLocalNotifications];
-
+        
         for (int i=0; i<[eventArray count]; i++)
         {
-
+            
             UILocalNotification* oneEvent = [eventArray objectAtIndex:i];
             
             NSDictionary *userInfoCurrent = oneEvent.userInfo;
@@ -206,7 +208,7 @@
             }
             
         }
-
+        
         cell.machineName.text = [NSString stringWithFormat:@"%@ %@", [[machine.type lowercaseString]capitalizedString], [NSString stringWithFormat:@"%d", [machine.name intValue]]];
         
         float averageMachineTime = [machine.cycleTime floatValue];
@@ -223,19 +225,19 @@
         {
             
             imageNames = @[@"activeMachineIcon@f1x2.png",
-                                    @"activeMachineIcon@f2x2.png",
-                                    @"activeMachineIcon@f3x2.png",
-                                    @"activeMachineIcon@f4x2.png",
-                                    @"activeMachineIcon@f5x2.png"];
+                           @"activeMachineIcon@f2x2.png",
+                           @"activeMachineIcon@f3x2.png",
+                           @"activeMachineIcon@f4x2.png",
+                           @"activeMachineIcon@f5x2.png"];
             
         }
-
+        
         else {
             
-             imageNames = @[@"activeDryerIcon@f1x2.png",
-                            @"activeDryerIcon@f2x2.png",
-                            @"activeDryerIcon@f1x2.png",
-                            @"activeDryerIcon@f2x2.png"];
+            imageNames = @[@"activeDryerIcon@f1x2.png",
+                           @"activeDryerIcon@f2x2.png",
+                           @"activeDryerIcon@f1x2.png",
+                           @"activeDryerIcon@f2x2.png"];
         }
         
         NSMutableArray *images = [[NSMutableArray alloc] init];
@@ -244,15 +246,15 @@
         {
             [images addObject:[UIImage imageNamed:[imageNames objectAtIndex:i]]];
         }
-
+        
         cell.animatedImageView.animationImages = images;
         
         cell.animatedImageView.animationDuration = 0.2;
         
         [cell.animatedImageView startAnimating];
-
+        
         return cell;
-
+        
     }
     
     else if ([machine.inUse isEqualToString:@"Available"])
@@ -264,7 +266,7 @@
         {
             
             cell = [tableView dequeueReusableCellWithIdentifier:@"availableWasher" forIndexPath:indexPath];
-
+            
         }
         
         else {
@@ -281,11 +283,11 @@
     
     else
     {
-     
+        
         availableMachineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"availableMachine" forIndexPath:indexPath];
         
         cell.machineName.text = [NSString stringWithFormat:@"%@ %@", [[machine.type lowercaseString]capitalizedString], [NSString stringWithFormat:@"%d", [machine.name intValue]]];
-
+        
         return cell;
         
     }
@@ -303,45 +305,45 @@
     
     if(sender.on)
     {
-
+        
         [self performSelectorInBackground:@selector(createNotification:) withObject:[_machines objectAtIndex:indexPath.row]];
         
     }
     
     else if (!sender.on)
     {
-
+        
         UIApplication *app = [UIApplication sharedApplication];
         
         NSArray *eventArray = [app scheduledLocalNotifications];
-
+        
         for (int i=0; i<[eventArray count]; i++)
         {
-
+            
             UILocalNotification* oneEvent = [eventArray objectAtIndex:i];
-
+            
             NSDictionary *userInfoCurrent = oneEvent.userInfo;
-
+            
             NSString *machineId = [NSString stringWithFormat:@"%@",[userInfoCurrent valueForKey:@"machineID"]];
-
+            
             if ([machineId isEqualToString:[[_machines objectAtIndex:indexPath.row] machineID]])
             {
-
+                
                 [app cancelLocalNotification:oneEvent];
-
+                
             }
-
+            
         }
         
     }
-
+    
 }
 
 - (void) createNotification:(machine *) userMachine
 {
-
+    
     UILocalNotification *notifyMe = [[UILocalNotification alloc] init];
-
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     
     [dateFormatter setDateFormat:@"mm"];
@@ -353,31 +355,31 @@
     NSDate *end = [dateFormatter dateFromString:timeRemainingInt];
     
     NSTimeInterval timeIntervalOfLaundryLoad = [end timeIntervalSinceDate:start];
-
+    
     NSDate *now = [NSDate date];
-
+    
     NSDate *endTimeOfLaundryLoad = [[NSDate alloc] initWithTimeInterval:timeIntervalOfLaundryLoad sinceDate:now];
-
+    
     NSTimeZone *timeZoneOfUser = [NSTimeZone timeZoneWithName:@"EDT"];
-
+    
     [notifyMe setFireDate:endTimeOfLaundryLoad];
-
+    
     [notifyMe setTimeZone:timeZoneOfUser];
-
+    
     if ([[userMachine type] isEqualToString:@"WASHER"])
     {
         
         notifyMe.alertBody = @"Your laundry load in the washer will be finished in 5 minutes!";
-
+        
     }
     
     else if ([[userMachine type] isEqualToString:@"DRYER"])
     {
         
         notifyMe.alertBody = @"Your laundry load in the dryer will be finished in 5 minutes!";
-
+        
     }
-
+    
     notifyMe.alertAction = @"view the status of your laundry";
     
     notifyMe.applicationIconBadgeNumber = 1;
@@ -385,12 +387,12 @@
     notifyMe.soundName = UILocalNotificationDefaultSoundName;
     
     NSDictionary *machineIDrecord = [[NSDictionary alloc] initWithObjects:@[[userMachine machineID]] forKeys: @[@"machineID"]];
-
+    
     notifyMe.userInfo = machineIDrecord;
-
+    
     for (UILocalNotification *notifyMeList in [[UIApplication sharedApplication] scheduledLocalNotifications])
     {
-
+        
         if([[notifyMeList.userInfo objectForKey:@"machineID"] isEqualToString:[userMachine machineID]])
         {
             
@@ -399,16 +401,16 @@
         }
         
     }
-
+    
     [[UIApplication sharedApplication] scheduleLocalNotification:notifyMe];
-
+    
 }
 
 - (IBAction)mainViewDidUnwind:(UIStoryboardSegue *)segue
 {
     
     [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
- 
+    
     [self loadUserDormSettings];
     
 }

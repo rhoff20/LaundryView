@@ -428,11 +428,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Wake Forest University";
+				ORGANIZATIONNAME = dombeef;
 				TargetAttributes = {
 					DDC384F81A4F8F9400F445A6 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 2RRQN2V8G5;
+						DevelopmentTeam = FH3RYK35Q8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -664,9 +664,11 @@
 				CODE_SIGN_ENTITLEMENTS = LaundryView/LaundryView.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FH3RYK35Q8;
 				INFOPLIST_FILE = LaundryView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dombeef.LaundryView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -679,9 +681,11 @@
 				CODE_SIGN_ENTITLEMENTS = LaundryView/LaundryView.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FH3RYK35Q8;
 				INFOPLIST_FILE = LaundryView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dombeef.LaundryView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

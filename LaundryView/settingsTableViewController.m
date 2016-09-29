@@ -117,9 +117,10 @@
 - (void) loadDormData
 {
     
-    NSURL * pathToDormsFile = [NSURL URLWithString:@"http://api.laundryview.com/school/?api_key=8c31a4878805ea4fe690e48fddbfffe1&method=getRoomData"];
+    NSURL * pathToDormsFile = [NSURL URLWithString:@"http://dombeef.github.io/embryriddle_halls_laundry/school.xml"];
     
-    NSData *fileData = [NSData dataWithContentsOfURL:pathToDormsFile];
+    
+        NSData *fileData = [NSData dataWithContentsOfURL:pathToDormsFile];
     
     NSXMLParser *fileParser = [[NSXMLParser alloc] initWithData:fileData];
     
