@@ -3,6 +3,7 @@
 //  LaundryView
 //
 //  Created by Nick Ladd on 12/27/14.
+//  Modified by Dominick Anatala for use at Embry Riddle 9/29/16
 //  Copyright (c) 2014 Wake Forest University. All rights reserved.
 //
 

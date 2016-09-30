@@ -3,6 +3,7 @@
 //  LaundryView
 //
 //  Created by Nick Ladd on 12/27/14.
+//  Modified by Dominick Anatala for use at Embry Riddle 9/29/16
 //  Copyright (c) 2014 Wake Forest University. All rights reserved.
 //
 
@@ -116,11 +117,12 @@
 
 - (void) loadDormData
 {
-    
+    //NSURL * pathToDormsFile = [NSURL URLWithString:@"http://api.laundryview.com/school/?api_key=8c31a4878805ea4fe690e48fddbfffe1&method=getRoomData"];
+    //redirect to custom xml path
     NSURL * pathToDormsFile = [NSURL URLWithString:@"http://dombeef.github.io/embryriddle_halls_laundry/school.xml"];
+
     
-    
-        NSData *fileData = [NSData dataWithContentsOfURL:pathToDormsFile];
+    NSData *fileData = [NSData dataWithContentsOfURL:pathToDormsFile];
     
     NSXMLParser *fileParser = [[NSXMLParser alloc] initWithData:fileData];
     
