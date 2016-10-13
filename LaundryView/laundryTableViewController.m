@@ -50,7 +50,7 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    
+    [self downloadData];
     documentsDirectory = [documentsDirectory stringByAppendingPathComponent:@"userDormSettings.txt"];
     
     NSString *filePath = [NSString stringWithFormat:@"%@", documentsDirectory];
@@ -71,6 +71,7 @@
         self.navigationItem.title = _dormName;
         
     }
+     
     
     [self downloadData];
     
@@ -229,7 +230,12 @@
                            @"activeMachineIcon@f2x2.png",
                            @"activeMachineIcon@f3x2.png",
                            @"activeMachineIcon@f4x2.png",
-                           @"activeMachineIcon@f5x2.png"];
+                           @"activeMachineIcon@f5x2.png",
+                           @"activeMachineIcon@f6x2.png",
+                           @"activeMachineIcon@f7x2.png",
+                           @"activeMachineIcon@f8x2.png",
+                           @"activeMachineIcon@f9x2.png",
+                           @"activeMachineIcon@f10x2.png"];
             
         }
         

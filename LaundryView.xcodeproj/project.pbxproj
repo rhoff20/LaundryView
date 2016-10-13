@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BF42A421DAD95A2002C1CBA /* activeMachineIcon@f6x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF42A3D1DAD95A2002C1CBA /* activeMachineIcon@f6x2.png */; };
+		7BF42A431DAD95A3002C1CBA /* activeMachineIcon@f7x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF42A3E1DAD95A2002C1CBA /* activeMachineIcon@f7x2.png */; };
+		7BF42A441DAD95A3002C1CBA /* activeMachineIcon@f8x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF42A3F1DAD95A2002C1CBA /* activeMachineIcon@f8x2.png */; };
+		7BF42A451DAD95A3002C1CBA /* activeMachineIcon@f9x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF42A401DAD95A2002C1CBA /* activeMachineIcon@f9x2.png */; };
+		7BF42A461DAD95A3002C1CBA /* activeMachineIcon@f10x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF42A411DAD95A2002C1CBA /* activeMachineIcon@f10x2.png */; };
 		DD3E10841A745105004B376D /* initialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E10831A745105004B376D /* initialViewController.m */; };
 		DD3E10901A74A232004B376D /* unknownTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E108F1A74A232004B376D /* unknownTableViewCell.m */; };
 		DD6C6C181A6AE4EA00192882 /* availableMachineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6C6C171A6AE4EA00192882 /* availableMachineTableViewCell.m */; };
@@ -73,6 +78,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BF42A3D1DAD95A2002C1CBA /* activeMachineIcon@f6x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeMachineIcon@f6x2.png"; sourceTree = "<group>"; };
+		7BF42A3E1DAD95A2002C1CBA /* activeMachineIcon@f7x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeMachineIcon@f7x2.png"; sourceTree = "<group>"; };
+		7BF42A3F1DAD95A2002C1CBA /* activeMachineIcon@f8x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeMachineIcon@f8x2.png"; sourceTree = "<group>"; };
+		7BF42A401DAD95A2002C1CBA /* activeMachineIcon@f9x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeMachineIcon@f9x2.png"; sourceTree = "<group>"; };
+		7BF42A411DAD95A2002C1CBA /* activeMachineIcon@f10x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeMachineIcon@f10x2.png"; sourceTree = "<group>"; };
 		DD3E10821A745105004B376D /* initialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initialViewController.h; sourceTree = "<group>"; };
 		DD3E10831A745105004B376D /* initialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = initialViewController.m; sourceTree = "<group>"; };
 		DD3E10871A746AAB004B376D /* LaundryView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LaundryView.entitlements; sourceTree = "<group>"; };
@@ -201,6 +211,11 @@
 				DD6C6C361A6AF90B00192882 /* activeMachineIcon@f3x2.png */,
 				DD6C6C371A6AF90B00192882 /* activeMachineIcon@f4x2.png */,
 				DD6C6C381A6AF90B00192882 /* activeMachineIcon@f5x2.png */,
+				7BF42A3D1DAD95A2002C1CBA /* activeMachineIcon@f6x2.png */,
+				7BF42A3E1DAD95A2002C1CBA /* activeMachineIcon@f7x2.png */,
+				7BF42A3F1DAD95A2002C1CBA /* activeMachineIcon@f8x2.png */,
+				7BF42A401DAD95A2002C1CBA /* activeMachineIcon@f9x2.png */,
+				7BF42A411DAD95A2002C1CBA /* activeMachineIcon@f10x2.png */,
 			);
 			name = "@88px";
 			sourceTree = "<group>";
@@ -470,9 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDAEE0E31A696E87000745D7 /* appIcon@76px.png in Resources */,
+				7BF42A451DAD95A3002C1CBA /* activeMachineIcon@f9x2.png in Resources */,
 				DD6C6C311A6AF8CE00192882 /* activeMachineIcon@f4.png in Resources */,
 				DDAEE0FD1A697464000745D7 /* appIcon@29px.png in Resources */,
 				DDAEE0F91A69736F000745D7 /* wfuLogo.png in Resources */,
+				7BF42A461DAD95A3002C1CBA /* activeMachineIcon@f10x2.png in Resources */,
 				DDC385081A4F8F9400F445A6 /* Main.storyboard in Resources */,
 				DDAEE0E41A696E87000745D7 /* appIcon@80px.png in Resources */,
 				DDAEE0E21A696E87000745D7 /* appIcon@58px.png in Resources */,
@@ -498,6 +515,7 @@
 				DD6C6C401A6AFB4300192882 /* machineIcon@44px.png in Resources */,
 				DD6C6C2E1A6AF8CE00192882 /* activeMachineIcon@f1.png in Resources */,
 				DDAEE0FA1A69736F000745D7 /* wfuLogo@2x.png in Resources */,
+				7BF42A421DAD95A2002C1CBA /* activeMachineIcon@f6x2.png in Resources */,
 				DD6C6C301A6AF8CE00192882 /* activeMachineIcon@f3.png in Resources */,
 				DDAEE0D51A696325000745D7 /* home_icon@2x.png in Resources */,
 				DDAEE0E91A696E87000745D7 /* appIcon@1024px.png in Resources */,
@@ -505,9 +523,11 @@
 				DD6C6C321A6AF8CE00192882 /* activeMachineIcon@f5.png in Resources */,
 				DD6C6C411A6AFB4300192882 /* machineIcon@88px.png in Resources */,
 				DD6C6C1F1A6AEC0200192882 /* outOfServiceMachineIcon@44px.png in Resources */,
+				7BF42A431DAD95A3002C1CBA /* activeMachineIcon@f7x2.png in Resources */,
 				DD86ACF01AC0FC100084884D /* outOfServiceDryerIcon@88px.png in Resources */,
 				DD86ACEA1AC0F9A80084884D /* dryerIcon@44px.png in Resources */,
 				DDAEE0D41A696325000745D7 /* home_icon@1x.png in Resources */,
+				7BF42A441DAD95A3002C1CBA /* activeMachineIcon@f8x2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
