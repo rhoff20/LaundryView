@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+	<school_name>TUFTS UNIVERSITY</school_name>
+	<laundry_rooms>
+        <laundryroom>
+            <location>1394836</location>
+            <campus_name>TUFTS UNIVERSITY</campus_name>
+            <laundry_room_name>Hill Hall</laundry_room_name>
+            <status>online</status>
+        </laundryroom>
+<!--        <laundryroom>-->
+<!--            <location>336573</location>-->
+<!--            <campus_name>TUFTS UNIVERSITY</campus_name>-->
+<!--            <laundry_room_name>ADAMS HALL</laundry_room_name>-->
+<!--            <status>online</status>-->
+<!--        </laundryroom>-->
+<!--        <laundryroom>-->
+<!--            <location>336576</location>-->
+<!--            <campus_name>TUFTS UNIVERSITY</campus_name>-->
+<!--            <laundry_room_name>APOLLO HALL</laundry_room_name>-->
+<!--            <status>online</status>-->
+<!--        </laundryroom>-->
+<!--        <laundryroom>-->
+<!--            <location>336575</location>-->
+<!--            <campus_name>TUFTS UNIVERSITY</campus_name>-->
+<!--            <laundry_room_name>CHANUTE COMPLEX</laundry_room_name>-->
+<!--            <status>online</status>-->
+<!--        </laundryroom>-->
+<!--        <laundryroom>-->
+<!--            <location>336577</location>-->
+<!--            <campus_name>TUFTS UNIVERSITY</campus_name>-->
+<!--            <laundry_room_name>DOOLITTLE HALL</laundry_room_name>-->
+<!--            <status>online</status>-->
+<!--        </laundryroom>-->
+<!--        <laundryroom>-->
+<!--            <location>336574</location>-->
+<!--            <campus_name>TUFTS UNIVERSITY</campus_name>-->
+<!--            <laundry_room_name>STIMPSON HALL</laundry_room_name>-->
+<!--            <status>online</status>-->
+<!--        </laundryroom>-->
+	</laundry_rooms>
+</school>

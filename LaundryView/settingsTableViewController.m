@@ -4,7 +4,8 @@
 //
 //  Created by Nick Ladd on 12/27/14.
 //  Modified by Dominick Anatala for use at Embry Riddle 9/29/16
-//  Copyright (c) 2014 Wake Forest University. All rights reserved.
+//  Modified by Ryan Hoff for use at Tufts University 2/23/18
+//  
 //
 
 #import "settingsTableViewController.h"
@@ -119,7 +120,7 @@
 {
     //NSURL * pathToDormsFile = [NSURL URLWithString:@"http://api.laundryview.com/school/?api_key=8c31a4878805ea4fe690e48fddbfffe1&method=getRoomData"];
     //redirect to custom xml path
-    NSURL * pathToDormsFile = [NSURL URLWithString:@"http://dombeef.github.io/embryriddle_halls_laundry/school.xml"];
+    NSURL * pathToDormsFile = [NSURL URLWithString:@"https://gist.githubusercontent.com/rhoff20/506ccd4a48ebd010e913b5bcd9b50478/raw/134c21a2cdb0b90134417f2399c90c2ff2652765/school.xml"];
 
     
     NSData *fileData = [NSData dataWithContentsOfURL:pathToDormsFile];
