@@ -4,67 +4,67 @@
 	<laundry_rooms>
         <laundryroom>
             <location>1394836</location>
-            <campus_name>UPHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Hill Hall</laundry_room_name>
             <status>online</status>
         </laundryroom>
         <laundryroom>
             <location>1394832</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Bush Hall</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394835</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Haskell Left</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394873</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Haskell Right</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394857</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Hodgdon 1st Fl</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394838</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Hodgdon 2nd Fl</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394858</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Hodgdon 3rd Fl</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394840</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Latin Way A</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394841</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Latin Way B</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>1394842</location>
-            <campus_name>DOWNHILL DORM</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>Latin Way C</laundry_room_name>
-            <status>online</status>
+            <status>offline</status>
         </laundryroom>
         <laundryroom>
             <location>20310156</location>
-            <campus_name>NOT TUFTS</campus_name>
+            <campus_name>DORM</campus_name>
             <laundry_room_name>SAMS DORM</laundry_room_name>
             <status>online</status>
         </laundryroom>
