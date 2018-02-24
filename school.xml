@@ -62,5 +62,11 @@
             <laundry_room_name>Latin Way C</laundry_room_name>
             <status>online</status>
         </laundryroom>
+        <laundryroom>
+            <location>20310156</location>
+            <campus_name>NOT TUFTS</campus_name>
+            <laundry_room_name>SAMS DORM</laundry_room_name>
+            <status>online</status>
+        </laundryroom>
 	</laundry_rooms>
 </school>
