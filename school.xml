@@ -2,17 +2,17 @@
 <school>
 	<school_name>TUFTS UNIVERSITY</school_name>
 	<laundry_rooms>
-    <laundryroom>
-        <location>20310156</location>
-        <campus_name>DORM</campus_name>
-        <laundry_room_name>SAMS DORM</laundry_room_name>
-        <status>online</status>
-    </laundryroom>
-    <laundryroom>
-        <location>1394836</location>
-        <campus_name>DORM</campus_name>
-        <laundry_room_name>Hill Hall</laundry_room_name>
-        <status>online</status>
-    </laundryroom>
+        <laundryroom>
+            <location>1394836</location>
+            <campus_name>DORM</campus_name>
+            <laundry_room_name>Hill Hall</laundry_room_name>
+            <status>online</status>
+        </laundryroom>
+        <laundryroom>
+            <location>20310156</location>
+            <campus_name>DORM</campus_name>
+            <laundry_room_name>SAMS DORM</laundry_room_name>
+            <status>online</status>
+        </laundryroom>
 	</laundry_rooms>
 </school>
