@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    //debugging???
+    [super awakeFromNib];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
